@@ -1,0 +1,38 @@
+{
+  "name": "shipra-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "web": "python -m http.server 8080",
+    "demo": "python -m http.server 8080",
+    "test": "jest",
+    "lint": "eslint .",
+    "build:android": "cd android && ./gradlew assembleRelease",
+    "build:ios": "cd ios && xcodebuild -workspace ShipraAI.xcworkspace -scheme ShipraAI -configuration Release -destination generic/platform=iOS"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Shipra AI - An intelligent mobile assistant powered by AI",
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "^7.4.8",
+    "@react-navigation/native": "^7.1.18",
+    "@react-navigation/stack": "^7.4.9",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "@types/react-native": "^0.72.8",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-native": "^0.81.4",
+    "react-native-safe-area-context": "^5.6.1",
+    "react-native-screens": "^4.16.0",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@react-native-community/cli": "^20.0.2",
+    "@react-native/metro-config": "^0.81.1"
+  }
+}
